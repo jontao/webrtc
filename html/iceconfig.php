@@ -18,10 +18,10 @@
             $arrayObj[0]['username'] = $response_username;
             $arrayObj[0]['credential'] = $response_password;
             //配置成自己的stun/turn服务器
-            $arrayObj[0]['urls'][0] = "stun:192.168.1.124:3478";
-            $arrayObj[0]['urls'][1] = "turn:192.168.1.124:3478?transport=tcp";
-            $arrayObj[0]['uris'][0] = "stun:192.168.1.124:3478";
-            $arrayObj[0]['uris'][1] = "turn:192.168.1.124:3478?transport=tcp";
+            $arrayObj[0]['urls'][0] = "stun:203.208.40.111:3478";
+            $arrayObj[0]['urls'][1] = "turn:203.208.40.111:3478?transport=tcp";
+            $arrayObj[0]['uris'][0] = "stun:203.208.40.111:3478";
+            $arrayObj[0]['uris'][1] = "turn:203.208.40.111:3478?transport=tcp";
             $jsonObj = new Response();  
             $jsonObj->lifetimeDuration = "300.000s";
             $jsonObj->iceServers = $arrayObj;

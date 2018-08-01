@@ -37,11 +37,11 @@ ICE_SERVER_OVERRIDE = None
 #     ]
 #   }
 # ]
-TURN_BASE_URL = 'http://192.168.1.124:80'
+TURN_BASE_URL = 'http://203.208.40.111:80'
 TURN_URL_TEMPLATE = '%s/turn.php?username=%s&key=%s'
 CEOD_KEY = 'jonta'
 
-ICE_SERVER_BASE_URL = 'http://192.168.1.124:80'
+ICE_SERVER_BASE_URL = 'http://203.208.40.111:80'
 ICE_SERVER_URL_TEMPLATE = '%s/iceconfig.php?key=%s'
 
 #ICE_SERVER_BASE_URL = 'http://192.168.1.124:80'
@@ -49,15 +49,15 @@ ICE_SERVER_URL_TEMPLATE = '%s/iceconfig.php?key=%s'
 ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API_KEY')
 
 # Dictionary keys in the collider instance info constant.
-WSS_INSTANCE_HOST_KEY = '192.168.1.124:8089'
+WSS_INSTANCE_HOST_KEY = '203.208.40.111:8089'
 WSS_INSTANCE_NAME_KEY = 'vm_name'
 WSS_INSTANCE_ZONE_KEY = 'zone'
 WSS_INSTANCES = [{
-    WSS_INSTANCE_HOST_KEY: '192.168.1.124:8089',
+    WSS_INSTANCE_HOST_KEY: '203.208.40.111:8089',
     WSS_INSTANCE_NAME_KEY: 'wsserver-std',
     WSS_INSTANCE_ZONE_KEY: 'us-central1-a'
 }, {
-    WSS_INSTANCE_HOST_KEY: '192.168.1.124:8089',
+    WSS_INSTANCE_HOST_KEY: '203.208.40.111:8089',
     WSS_INSTANCE_NAME_KEY: 'wsserver-std-2',
     WSS_INSTANCE_ZONE_KEY: 'us-central1-f'
 }]

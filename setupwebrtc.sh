@@ -2,6 +2,8 @@
 #203.208.40.111  dl.google.com
 #203.208.41.63  developers.google.com
 
+# if error npm config set strict-ssl false
+
 
 export PATH=$PATH:/home/jonta/webrtc/google_appengine
 

@@ -19,7 +19,7 @@
     $jsonObj->username = $response_username;  
     $jsonObj->password = $response_password;  
     $jsonObj->ttl = 86400;  
-    $jsonObj->uris = array("turn:192.168.1.124:3478?transport=udp","turn:192.168.1.124:3478?transport=tcp","turn:192.168.1.124:3479?transport=udp","turn:192.168.1.124:3479?transport=tcp");  
+    $jsonObj->uris = array("turn:203.208.40.111:3478?transport=udp","turn:203.208.40.111:3478?transport=tcp","turn:203.208.40.111:3479?transport=udp","turn:203.208.40.111:3479?transport=tcp");  
 
     echo json_encode($jsonObj);  
 
