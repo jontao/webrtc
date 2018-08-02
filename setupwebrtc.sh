@@ -6,11 +6,14 @@
 
 
 export PATH=$PATH:/home/jonta/webrtc/google_appengine
+if [ "$1" = "start" ];then
+  dev_appserver.py   /home/jonta/webrtc/apprtc/out/app_engine --skip_sdk_update_check --host=jonta.cn &
 
-dev_appserver.py   /home/jonta/webrtc/apprtc/out/app_engine --skip_sdk_update_check --host=192.168.1.124 &
+  /home/jonta/webrtc/colider/bin/collidermain -port=8089 -tls=false &
 
-/home/jonta/webrtc/colider/bin/collidermain -port=8089 -tls=false &
-
-service coturn start
-nginx
-service php7.0-fpm restart
+  turnserver &
+  nginx
+  service php-fpm start
+else 
+	killall python; killall nginx; killall collidermain; service php-fpm stop; killall turnserver
+fi
