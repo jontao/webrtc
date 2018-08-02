@@ -7,7 +7,7 @@
 
 export PATH=$PATH:/home/jonta/webrtc/google_appengine
 if [ "$1" = "start" ];then
-  dev_appserver.py   /home/jonta/webrtc/apprtc/out/app_engine --skip_sdk_update_check --host=jonta.cn &
+  dev_appserver.py   /home/jonta/webrtc/apprtc/out/app_engine --skip_sdk_update_check --host=118.24.173.195 &
 
   /home/jonta/webrtc/colider/bin/collidermain -port=8089 -tls=false &
 
